@@ -139,8 +139,11 @@ namespace sertificator
                         workSertificat.Create(workServices);
                         var doPDF = new CreatePDF(workSertificat, workServices);
                         doPDF.Create();
+                        Console.WriteLine();
+                        Console.WriteLine("**********");
                         Console.WriteLine("Сертификат в формате PDF создан!");
                         Console.WriteLine("Выберете дальнейшее действие:");
+                        Console.WriteLine("**********");
                         menuNumber = 30;
                     }
                         break;
